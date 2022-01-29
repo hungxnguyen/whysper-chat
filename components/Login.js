@@ -14,7 +14,7 @@ function Login({ nameInput, setNameInput }) {
     <div className="relative">
       <div className="flex flex-col absolute z-50 h-screen items-center justify-center w-full gap-y-6 card">
         <Image
-          src="/images/login-image.png"
+          src="/images/login-image2.png"
           className="rounded-full object-cover"
           height={200}
           width={200}
