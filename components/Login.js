@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useMoralis } from "react-moralis";
 import { LoginIcon } from "@heroicons/react/outline";
 
-function Login({ nameInput, setNameInput }) {
+function Login() {
   const { authenticate } = useMoralis();
 
   const authenticateOnSubmit = (e) => {
@@ -34,7 +34,7 @@ function Login({ nameInput, setNameInput }) {
           </button>
 
           <div className="text-center ">
-            <p>Don't have a wallet?</p>
+            <p>Don&apos;t have a wallet?</p>
             <p className="underline decoration-solid underline-offset-4 font-medium mt-0.5 cursor-pointer">
               Sign in with email & password
             </p>
