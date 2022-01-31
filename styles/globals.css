@@ -9,5 +9,10 @@
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
   }
+
+  .modal {
+    width: clamp(30%, 500px, 70%);
+    height: min(50%, 200px);
+  }
 }
 
