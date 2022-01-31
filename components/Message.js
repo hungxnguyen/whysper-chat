@@ -21,7 +21,7 @@ function Message({ message }) {
         <Avatar username={user.getUsername()} />
       </div>
       <div
-        className={`flex space-x-4 p-2 text-sm rounded-lg  ${
+        className={`flex space-x-4 p-1.5 text-sm rounded-lg  ${
           isUserMessage
             ? "rounded-br-none bg-blue-600 shadow-lg shadow-blue-900"
             : "rounded-bl-none bg-gray-500 shadow-lg shadow-gray-700"

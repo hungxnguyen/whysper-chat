@@ -31,7 +31,7 @@ function Messages() {
         />
       </div>
 
-      <div className="space-y-7 md:space-y-10 px-6 md:px-12 lg:px-28 ">
+      <div className="space-y-7 md:space-y-9 px-6 md:px-12 lg:px-28 ">
         {data.map((message) => (
           <Message key={message.id} message={message} />
         ))}

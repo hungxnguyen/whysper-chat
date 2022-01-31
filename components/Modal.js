@@ -54,7 +54,7 @@ const Modal = ({ handleClose }) => {
           onSubmit={displayNewUsername}
           className="flex flex-col space-y-3 text-center "
         >
-          <p className="text-lg">Enter New Username</p>
+          <p className="text-xl">Enter New Username</p>
           <input
             className="p-2 rounded-lg placeholder:text-sm text-center text-zinc-900"
             value={newUsername}
