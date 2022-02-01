@@ -4,7 +4,6 @@ import TimeAgo from "timeago-react";
 
 function Message({ message }) {
   const { user } = useMoralis();
-
   const isUserMessage = message.get("ethAddress") === user.get("ethAddress");
 
   return (
@@ -18,7 +17,7 @@ function Message({ message }) {
           isUserMessage && "order-last ml-2"
         }`}
       >
-        <Avatar username={user.getUsername()} />
+        <Avatar username={message.get("username")} />
       </div>
       <div
         className={`flex space-x-4 p-1.5 text-sm rounded-lg  ${
