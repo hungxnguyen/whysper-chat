@@ -13,12 +13,8 @@ function Header() {
   const open = () => setModalOpen(true);
   const close = () => setModalOpen(false);
 
-  const handleToggle = () => {
-    modalOpen ? close() : open();
-  };
-
   const setUsername = () => {
-    handleToggle();
+    modalOpen ? close() : open();
   };
 
   return (
