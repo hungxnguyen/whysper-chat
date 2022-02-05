@@ -8,19 +8,19 @@ function Message({ message }) {
 
   return (
     <div
-      className={`flex items-end space-x-2 relative ${
+      className={`relative flex items-end space-x-2 ${
         isUserMessage && "justify-end"
       }`}
     >
       <div
-        className={`relative h-8 w-8 border-2 border-slate-800 rounded-full ${
+        className={`relative h-8 w-8 rounded-full border-2 border-slate-800 ${
           isUserMessage && "order-last ml-2"
         }`}
       >
         <Avatar username={message.get("username")} />
       </div>
       <div
-        className={`flex space-x-4 p-1.5 text-sm rounded-lg  ${
+        className={`flex max-w-[70%] space-x-4 rounded-lg p-1.5 text-sm lg:max-w-[60%] ${
           isUserMessage
             ? "rounded-br-none bg-blue-600 shadow-lg shadow-blue-900"
             : "rounded-bl-none bg-gray-500 shadow-lg shadow-gray-700"

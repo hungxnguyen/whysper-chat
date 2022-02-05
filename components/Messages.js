@@ -31,17 +31,17 @@ function Messages() {
         />
       </div>
 
-      <div className="space-y-7 md:space-y-9 px-6 md:px-12 lg:px-28 ">
+      <div className="space-y-7 px-6 md:space-y-9 md:px-12 lg:px-36 ">
         {data.map((message) => (
           <Message key={message.id} message={message} />
         ))}
       </div>
 
-      <div ref={endOfMessagesRef} className="text-center text-gray-400 pt-10">
+      <div ref={endOfMessagesRef} className="pt-10 text-center text-gray-400">
         <p>{`You're up to date ${user.getUsername()} 🚀 `} </p>
       </div>
 
-      <div className="fixed bottom-0 h-16 w-full mt-10 flex justify-center items-center bg-blue-900 ">
+      <div className="fixed bottom-0 mt-10 flex h-16 w-full items-center justify-center bg-blue-900 ">
         <SendMessage endOfMessagesRef={endOfMessagesRef} />
       </div>
     </div>

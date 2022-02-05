@@ -18,9 +18,9 @@ function Header() {
   };
 
   return (
-    <div className="sticky top-0 p-5 z-50 text-blue-500 bg-black border-b-4 border-blue-700/80">
+    <div className="sticky top-0 z-50 border-b-4 border-blue-700/80 bg-black p-5 text-blue-500">
       <div className="grid grid-cols-5 lg:grid-cols-6 ">
-        <div className="relative h-16 w-16 mx-auto hidden lg:inline-grid">
+        <div className="relative mx-auto hidden h-16 w-16 lg:inline-grid">
           <Image
             src="/images/login-image.png"
             className="rounded-full"
@@ -29,15 +29,15 @@ function Header() {
             alt="user-avatar"
           />
         </div>
-        <div className="text-left pl-3 md:pl-0 md:text-center col-span-4">
-          <div className="relative h-36 w-36 md:h-40 md:w-40 md:mx-auto border-4 border-blue-500 rounded-full">
+        <div className="col-span-4 pl-3 text-left md:pl-0 md:text-center">
+          <div className="relative h-36 w-36 rounded-full border-4 border-blue-500 md:mx-auto md:h-40 md:w-40">
             <Avatar logoutOnPress />
           </div>
 
-          <h1 className="text-xl lg:text-2xl mt-3.5 font-thin">
+          <h1 className="mt-3.5 text-xl font-thin lg:text-2xl">
             Welcome to Whysper
           </h1>
-          <h2 className="text-3xl lg:text-4xl font-semibold truncate -mt-0.5 text-blue-200">
+          <h2 className="-mt-0.5 truncate text-3xl font-semibold text-blue-200 lg:text-4xl">
             @{user.getUsername()}
           </h2>
 

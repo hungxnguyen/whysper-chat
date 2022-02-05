@@ -7,7 +7,7 @@ function Avatar({ username, logoutOnPress }) {
   return (
     <div>
       <Image
-        className="rounded-full bg-zinc-800 cursor-pointer hover:opacity-75"
+        className="cursor-pointer rounded-full bg-zinc-800 hover:opacity-75"
         src={`https://avatars.dicebear.com/api/adventurer/${
           username || user.getUsername()
         }.svg`}

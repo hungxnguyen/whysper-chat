@@ -43,7 +43,7 @@ const Modal = ({ handleClose }) => {
   return (
     <Backdrop onClick={handleClose}>
       <motion.div
-        className="flex items-center justify-center m-auto p-5 rounded-lg max-w-screen-md bg-blue-200 modal"
+        className="modal m-auto flex max-w-screen-md items-center justify-center rounded-lg bg-blue-200 p-5"
         variants={dropIn}
         initial="hidden"
         animate="visible"
@@ -56,13 +56,13 @@ const Modal = ({ handleClose }) => {
         >
           <p className="text-lg">Enter New Username</p>
           <input
-            className="p-2 rounded-lg placeholder:text-sm text-center text-zinc-900"
+            className="rounded-lg p-2 text-center text-zinc-900 placeholder:text-sm"
             value={newUsername}
             onChange={(e) => setNewUsername(e.target.value)}
             type="text"
           />
           <button
-            className="p-1.5 bg-blue-500 text-white rounded-lg"
+            className="rounded-lg bg-blue-500 p-1.5 text-white"
             onClick={displayNewUsername}
           >
             Submit
